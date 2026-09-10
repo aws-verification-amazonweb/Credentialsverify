@@ -1,4 +1,4 @@
-const VALID_CODE = "AWS-2026-X99";
+const VALID_CODE = "W7B9C3X1K5M8P2Q0";
 
 const form = document.getElementById('verify-form');
 const input = document.getElementById('verification-code');
@@ -14,7 +14,7 @@ form.addEventListener('submit', (e) => {
   const enteredCode = input.value.trim();
 
   if (enteredCode !== VALID_CODE) {
-    errorMsg.textContent = `Invalid code. Try using: ${VALID_CODE}`;
+    errorMsg.textContent = `Invalid code.`;
     input.focus();
     return;
   }
