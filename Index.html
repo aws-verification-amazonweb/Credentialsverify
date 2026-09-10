@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credential Verification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main-wrapper">
+    <main class="verification-card">
+      
+      <!-- Single Combined Header Banner / Logo -->
+      <header class="branding-container">
+        <img src="./images/header-logo.png" alt="Branding" class="brand-banner-img">
+      </header>
+
+      <h1 class="page-title">Credential Verification</h1>
+
+      <!-- VIEW 1: Input Form -->
+      <div class="card-content" id="form-view">
+        <p class="instructions">Please enter a verification code below.</p>
+
+        <form id="verify-form">
+          <div class="form-group">
+            <input 
+              type="text" 
+              id="verification-code" 
+              placeholder="Verification Code*" 
+              autocomplete="off"
+              required
+            >
+          </div>
+          <div class="error-msg" id="error-message"></div>
+
+          <button type="submit" class="verify-btn">Verify Credential</button>
+        </form>
+      </div>
+
+      <!-- VIEW 2: Verified Result Details -->
+      <div class="verified-view" id="result-view">
+        <div class="action-banner">
+          <button type="button" class="reset-btn" id="reset-btn">Verify a Different Credential</button>
+        </div>
+
+        <div class="cert-body">
+          <span class="status-badge">ACTIVE</span>
+          <h2 class="cert-name">AWS Certified Solutions Architect - Associate</h2>
+          <div class="holder-name" id="holder-name">Arvind Raaj G V</div>
+
+          <div class="meta-group">
+            <div class="meta-label">ACTIVE SINCE</div>
+            <div class="meta-value" id="active-since">07-07-2026</div>
+          </div>
+
+          <div class="meta-group">
+            <div class="meta-label">EXPIRES ON</div>
+            <div class="meta-value" id="expires-on">07-07-2029</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wavy Loader Overlay -->
+      <div class="loader-overlay" id="loader-overlay">
+        <div class="wave-loader">
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    &copy; 2019&ndash;2026 Alpine Testing Inc.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
