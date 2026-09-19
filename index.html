@@ -11,7 +11,7 @@
   <div class="main-wrapper">
     <main class="verification-card">
       
-      <!-- Single Combined Header Banner / Logo -->
+      <!-- Single Header Banner / Logo -->
       <header class="branding-container">
         <img src="./images/header-logo.png" alt="Branding" class="brand-banner-img">
       </header>
@@ -38,7 +38,7 @@
         </form>
       </div>
 
-      <!-- VIEW 2: Verified Result Details -->
+      <!-- VIEW 2: Verified Result Details (Populated dynamically) -->
       <div class="verified-view" id="result-view">
         <div class="action-banner">
           <button type="button" class="reset-btn" id="reset-btn">Verify a Different Credential</button>
@@ -46,17 +46,17 @@
 
         <div class="cert-body">
           <span class="status-badge">ACTIVE</span>
-          <h2 class="cert-name">AWS Certified Solutions Architect - Associate</h2>
-          <div class="holder-name" id="holder-name">Arvind Raaj G V</div>
+          <h2 class="cert-name" id="cert-name"></h2>
+          <div class="holder-name">Arvind Raaj G V</div>
 
           <div class="meta-group">
             <div class="meta-label">ACTIVE SINCE</div>
-            <div class="meta-value" id="active-since">07-07-2026</div>
+            <div class="meta-value" id="active-since"></div>
           </div>
 
           <div class="meta-group">
             <div class="meta-label">EXPIRES ON</div>
-            <div class="meta-value" id="expires-on">07-07-2029</div>
+            <div class="meta-value" id="expires-on"></div>
           </div>
         </div>
       </div>
@@ -82,3 +82,4 @@
   <script src="app.js"></script>
 </body>
 </html>
+
