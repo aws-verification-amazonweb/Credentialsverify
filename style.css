@@ -50,7 +50,6 @@ body {
   transition: max-width 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Header Container: Balanced padding and pure auto-centering */
 .branding-container {
   background-color: #ffffff;
   min-height: 85px;
@@ -61,7 +60,6 @@ body {
   border-bottom: 1px solid #f0f2f5;
 }
 
-/* Image Fit: Ensures natural aspect ratio, no squishing, centered */
 .brand-banner-img {
   width: auto;
   max-width: 100%;
@@ -278,16 +276,4 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
-  .verification-card {
-    max-width: 430px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05), 0 16px 36px rgba(0, 0, 0, 0.08);
-  }
-}
-
-@media (min-width: 1440px) {
-  .verification-card {
-    max-width: 440px;
-  }
-}
 
